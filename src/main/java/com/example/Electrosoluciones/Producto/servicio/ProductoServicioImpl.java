@@ -77,7 +77,7 @@ public class ProductoServicioImpl implements ProductoServicio {
 
         if (productoRepositorio.findById(id).isPresent()) {
             productoRepositorio.deleteById(id);
-            return "Producto eliminado exitosamente";
+            return "Producto eliminado de manera exitosa";
         }
         return "Producto no encontrado";
 
